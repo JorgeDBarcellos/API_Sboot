@@ -22,7 +22,7 @@ import com.compasso.api.resources.Cliente;
 @RestController
 @RequestMapping(path="/clientes")
 public class ClienteResource{
-
+	
 	private ClienteRepository clienteRepository;
 
 	public ClienteResource(ClienteRepository clienteRepository){
@@ -42,7 +42,7 @@ public class ClienteResource{
 		clientes = clienteRepository.findAll();
 		return new ResponseEntity<>(clientes, HttpStatus.OK);
 	}
-
+	
 	@GetMapping(path="/{id}")
 	public ResponseEntity<Optional<Cliente>> getById(@PathVariable Integer id){
 		Optional<Cliente> cliente;
@@ -53,7 +53,7 @@ public class ClienteResource{
 			return new ResponseEntity<Optional<Cliente>>(HttpStatus.NOT_FOUND);
 		}
 	}
-
+	
 	@DeleteMapping(path="/{id}")
 	public ResponseEntity<Optional<Cliente>> deleteById(@PathVariable Integer id){
 	try{

@@ -38,16 +38,13 @@ public class Cliente {
 		return id;
 	}
 
-
 	public void setId(int id) {
 		this.id = id;
 	}
 
-
 	public String getNome() {
 		return nome;
 	}
-
 
 	public void setNome(String nome) {
 		this.nome = nome;
@@ -68,7 +65,7 @@ public class Cliente {
 	public void setDatanascimento(Integer datanascimento) {
 		this.datanascimento = datanascimento;
 	}
-	
+
 	
 	
 }

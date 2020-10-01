@@ -7,8 +7,5 @@ import com.compasso.api.resources.Cidade;
 
 @Repository
 public interface CidadeRepository extends JpaRepository<Cidade, Integer>{
-
-	Cidade findByNome(String nome);
-
-	Cidade findByEstado(String estado);
+	
 }

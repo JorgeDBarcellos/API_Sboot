@@ -54,7 +54,6 @@ public class CidadeResource{
 		}
 	}
 
-
 		@DeleteMapping(path="/{id}")
 		public ResponseEntity<Optional<Cidade>> deleteById(@PathVariable Integer id){
 			try{
